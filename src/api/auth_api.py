@@ -7,9 +7,13 @@ from domain.auth import User
 from orm.database import db_session
 from utils.json_utils import JsonUtil
 
+from flask_login import login_required,logout_user, current_user, login_user
+
 class UserApi(Resource):
+    
+#     @login_required
     def get(self):
-        
+        print "calling /api/users/get"
         try:
             users = User.query.all()
             return Response(JsonUtil.listToJson(users), mimetype='application/json')
