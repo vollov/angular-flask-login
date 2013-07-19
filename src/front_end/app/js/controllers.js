@@ -4,10 +4,13 @@ demoApp.controller('UserCtrl', function ($scope, User) {
 	$scope.users = User.query();
 });
 
-demoApp.controller('LoginCtrl', function ($scope) {
+demoApp.controller('LoginCtrl', function ($scope, $location) {
 	$scope.credentials = { username: "", password: ""};
 	
 	$scope.login = function() {
-		console.log($scope.credentials.username);
+		if($scope.credentials.username === "dustin") {
+			$location.path('/home');
+		}
+		//console.log($scope.credentials.username);
 	};
 });

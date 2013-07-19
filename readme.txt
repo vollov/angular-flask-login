@@ -9,14 +9,15 @@ curl -i http://localhost:5000/api/users
 curl -i http://localhost:5000/app/views/public/about.html
 
 []references
+
 https://github.com/jmcunningham/AngularJS-Learning
 http://arthur.gonigberg.com/2013/06/29/angularjs-role-based-auth/
 http://www.youtube.com/user/vidjadavemo
 http://www.frederiknakstad.com/authentication-in-single-page-applications-with-angular-js/
 
 []knowledge
+http://www.youtube.com/watch?v=8ILQOFAgaXE 25:23
 http://www.youtube.com/watch?v=Lsg84NtJbmI 21 minutes
-
 http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
 http://flask.pocoo.org/snippets/3/
 
