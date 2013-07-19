@@ -1,0 +1,11 @@
+body {
+	padding-top: 60px;
+}
+
+table .even {
+	background-color: lightblue;
+}
+
+table .selected {
+	background-color: lightgreen;
+}

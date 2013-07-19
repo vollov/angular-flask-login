@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-ng-app="appModule">
+<head>
+  <meta charset="utf-8">
+  <title>Build Tracker</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">login demo</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/users">Users</a></li>
+            <li><a href="#/about">About</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div ng-view></div>
+    </div> <!-- /container -->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+  -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-resource.min.js"></script>
+
+  <!-- UI Libs   -->
+  <script src="lib//twitter/bootstrap.js"></script>
+
+  
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>
+
