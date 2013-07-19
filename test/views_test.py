@@ -14,8 +14,9 @@ class ViewTestCase(unittest.TestCase):
         
     def test_users(self):
         view = self.app.get('/api/users')
-        expected = '[{"password": "pass1", "id": "1", "name": "dustin"}, {"password": "Pass2", "id": "2", "name": "leah"}]'
+        expected = '[{"active": true, "password": "foobar", "id": 1, "name": "wendy"}, {"active": false, "password": "passwd", "id": 2, "name": "mary"}, {"active": true, "password": "blah", "id": 3, "name": "fred"}]'
         actual = view.data
+#         print actual
         self.assertEqual(expected,actual,'request for /api/users failed')
         
     def test_home(self):

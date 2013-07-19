@@ -3,25 +3,17 @@
 from flask import Blueprint, Response, request
 from flask.ext.restful import Resource
 
-import json
+from domain.auth import User
+from orm.database import db_session
+from utils.json_utils import JsonUtil
 
 class UserApi(Resource):
     def get(self):
         
         try:
-            users =  [{
-                "id": "1",
-                "name": "dustin",
-                'password': 'pass1'
-              },
-              {
-                'id': '2',
-                'name': 'leah',
-                'password': 'Pass2'
-              }
-            ]
+            users = User.query.all()
+            return Response(JsonUtil.listToJson(users), mimetype='application/json')
             
-            return users
         except Exception as e:
             print e
             return '', 500
