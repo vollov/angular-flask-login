@@ -1,3 +1,7 @@
+#NOTE unfinished project
+
+## I noticed lots of people forking this piece of code, but it is unfinished code. I think the design is not good, refer it on your own risk!
+
 [] tags
 0.1 -- base application without user login
 0.2 -- add unit test for restful api
